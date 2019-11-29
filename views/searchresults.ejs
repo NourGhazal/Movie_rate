@@ -38,5 +38,26 @@
             </form>
         </div>
     </nav>
+    <a href="darkknight" id="darkknight"> </a>
+    
+     <a href="scream" id="scream">  </a>
+     
+     <a href="godfather" id="godfather">  </a>
+    
+     <a href="godfather2" id="godfather2">  </a>
+   
+     <a href="fightclub" id="fightclub">  </a>
+     
+     <a href="conjuring" id="conjuring"> </a>
+     
+    <script>
+    recieved = "<%= movie %>";
+    mydata = recieved.split(',');
+   // console.log(mydata[0])
+    for(i in mydata){
+        document.getElementById(mydata[i]).innerHTML= mydata[i] + '<br>'
+        }
+    </script>
+     
 </body>
 </html>
